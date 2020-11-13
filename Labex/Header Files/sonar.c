@@ -61,7 +61,7 @@ uint16_t read_sonar()
 		sei();
 		
 		no_of_ticks = ((overFlowCounter * TIMER0_MAX) + TCNT0);			// counter count
-		dist_in_cm = (no_of_ticks / (CONVERT_TO_CM * CYCLES_PER_US));	// distance in cm
+		dist_in_cm = (no_of_ticks / (CONVERT_TO_CM * CYCLES_PER_US)) / 2;	// distance in cm
 	}
 	return (dist_in_cm);
 }
