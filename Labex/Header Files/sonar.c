@@ -17,7 +17,7 @@ void trigger_sonar() {
 	TRIG_LOW();             // Clear pin before setting it high
 	_delay_us(10);           // Clear to zero and give time for electronics to set
 	TRIG_HIGH();            // Set pin high
-	_delay_us(15);          // Send high pulse for minimum 10us
+	_delay_us(15);          // Send high pulse for 15us
 	TRIG_LOW();             // Clear pin
 }
 
